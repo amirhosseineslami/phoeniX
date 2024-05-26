@@ -9,12 +9,13 @@
 `include "Load_Store_Unit.v"
 `include "Hazard_Forward_Unit.v"
 `include "Control_Status_Unit.v"
+`include "Control_Status_Register_File.v"
 `include "Divider_Unit.v"
 `include "Multiplier_Unit.v"
 
 module phoeniX 
 #(
-    parameter RESET_ADDRESS = 32'h1000_0000,
+    parameter RESET_ADDRESS = 32'h0000_0000,
     parameter M_EXTENSION   = 1'b0,
     parameter E_EXTENSION   = 1'b0
 ) 
@@ -149,7 +150,7 @@ module phoeniX
     // --------------------------------- 
     Immediate_Generator immediate_generator
     (
-        .instruction(instruction_FD_reg),
+        .instruction(instruction_FD_reg[31 : 7]),
         .instruction_type(instruction_type_FD_wire),
         .immediate(immediate_FD_wire)
     );
@@ -298,7 +299,7 @@ module phoeniX
     // Multiplier/Divider Unit Instantiation
     // -------------------------------------
     generate if (M_EXTENSION)
-    begin
+    begin : M_EXTENSION_Generate_Block
         Multiplier_Unit
         #(
             .GENERATE_CIRCUIT_1(1),
