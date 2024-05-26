@@ -9,7 +9,7 @@
 - **Date:** 5/27/2024
 
 ---
-## Quick Sort Explained
+## Quick Sort
 
 Quick sort is a strategy for arranging data like a game of "divide and conquer." It breaks down the data set into smaller sections, sorts each one independently, and then combines them back into a final sorted order.
 
