@@ -57,7 +57,7 @@ Quick sort is a strategy for arranging data like a game of "divide and conquer."
 1. We put the reference point in its correct sorted position.
 2. We clean up any temporary storage and go back to the `quicksort` function.
 
-![Quick Sort Image](https://github.com/amirhosseineslami/phoeniX/blob/main/square.png)
+![Quick Sort Image](https://github.com/amirhosseineslami/phoeniX/blob/main/quick_sort.png)
 
 ---
 
