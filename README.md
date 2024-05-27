@@ -60,7 +60,7 @@ Quick sort is a divide-and-conquer algorithm that sorts an array by partitioning
 1. Place the pivot in its correct position.
 2. Restore registers and return to the `quicksort` routine.
 
-![Quick Sort Image](https://github.com/jes1per/phoeniX_4022/blob/573a05ae2aa3be79fc6f82232c1a02ef24220e5d/Software/User_Codes/integer_square_root/integer_square_root.jpg)
+![Quick Sort Image](https://github.com/amirhosseineslami/phoeniX/blob/main/quick_sort.png)
 
 ---
 
@@ -95,6 +95,8 @@ This code performs an integer square root calculation using a binary search algo
 
 1. Store the last `mid` into `a0` as the result.
 
-![Binary Search Image](https://github.com/jes1per/phoeniX_4022/blob/573a05ae2aa3be79fc6f82232c1a02ef24220e5d/Software/User_Codes/quick_sort/quick_sort.jpg)
+![sqrt image](https://github.com/amirhosseineslami/phoeniX/blob/main/square16.png)
+![sqrt image](https://github.com/amirhosseineslami/phoeniX/blob/main/square49.png)
+
 
 ---
