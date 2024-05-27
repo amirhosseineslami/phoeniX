@@ -9,7 +9,7 @@
 `include "Load_Store_Unit.v"
 `include "Hazard_Forward_Unit.v"
 `include "Control_Status_Unit.v"
-`include "Control_Status_Register_File.v"
+// `include "Control_Status_Register_File.v"
 `include "Divider_Unit.v"
 `include "Multiplier_Unit.v"
 
@@ -150,7 +150,7 @@ module phoeniX
     // --------------------------------- 
     Immediate_Generator immediate_generator
     (
-        .instruction(instruction_FD_reg[31 : 7]),
+        .instruction(instruction_FD_reg[31 : 0]),
         .instruction_type(instruction_type_FD_wire),
         .immediate(immediate_FD_wire)
     );
